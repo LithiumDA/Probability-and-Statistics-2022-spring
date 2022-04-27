@@ -3,22 +3,23 @@ import random
 import matplotlib.pyplot as plt
 
 def get_chi2(n):
+    # Sample from chi2(n) distribution.
     x_list = [random.normalvariate(mu=0, sigma=1) for _ in range(n)]
     x2_list = [x*x for x in x_list]
     return sum(x2_list)
 
 def get_t(n):
     # TODO: implement this function to sample a t(n) random variable
-    # You may need to generate X, X_1, ..., X_n ~ i.i.d. N(0,1) first
+    # You may need to generate X, X_1, ..., X_n ~ i.i.d. N(0,1) first.
     return 0
 
 def get_F(n1, n2):
     # TODO: implement this function to sample an F(n1,n2) random variable
-    # You may need to generate X_1, ..., X_n1, Y_1, ..., Y_n2 ~ i.i.d. N(0,1) first
+    # You may need to generate X_1, ..., X_n1, Y_1, ..., Y_n2 ~ i.i.d. N(0,1) first.
     return 0
 
-# This function plot histogram for the given list
 def plot_histogram(x_list, distribution_name='', save_path=None):
+    # Helper function that plots histogram for the given list
     if save_path is None:
         save_path = distribution_name + '-histogram.pdf'
     plt.hist(x_list, bins=100)

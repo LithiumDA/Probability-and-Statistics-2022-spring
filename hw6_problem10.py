@@ -3,7 +3,7 @@ import random
 
 def get_D_n(n):
     # TODO: implement this function to sample D_n for a given n
-    # You may need to generate X_1, ..., X_n ~ i.i.d. U(0,1) first and then compute D_n
+    # You may need to generate X_1, ..., X_n ~ i.i.d. U(0,1) first and then compute D_n.
     return 0
 
 if __name__ == '__main__':
