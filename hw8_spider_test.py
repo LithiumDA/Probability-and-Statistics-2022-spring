@@ -36,7 +36,7 @@ df=(temp1+temp2)**2/(temp1**2/(n_WF-1)+temp2**2/(n_LF-1))
 
 # hypothesis test
 alpha = 0.01
-print(T>t.cdf(1-alpha,df))
+print(T>t.ppf(1-alpha,df))
 
 
 '''
