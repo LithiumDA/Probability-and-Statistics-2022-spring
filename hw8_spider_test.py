@@ -41,7 +41,7 @@ print(T>t.cdf(1-alpha,df))
 
 '''
 You can also write your own code, using the processed data.
-Processed data can be load with the following code:
+Processed data can be loaded with the following code:
 '''
 # spider_WF = np.load('hw8_spider_WF.npy')
 # spider_LF = np.load('hw8_spider_LF.npy')
